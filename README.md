@@ -1,1 +1,71 @@
 # Website
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HLeitch Games</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+        <header >
+        <div class="hero-container">
+        <div class="hero">
+
+            <h1 class="name">Harrison Leitch</h1>
+
+            <div class="header-grid">
+                <a class="socials-button"><img class="social-logo" src="logos/linkedin_logo.png"></a>
+        
+                <a class="socials-button"><img class="social-logo" src="logos/youtube_logo.png"></a>
+                <a class="socials-button"><img class="social-logo" src="logos/github_logo.png"></a>
+                <a class="email-text"><b>hleitchgames@gmail.com</b></a>
+            </div>
+        </div>
+    </div>
+
+        </header>
+    <body>
+
+
+        <h1 class="title" style="position:relative;">Hello Seeing how long we can type for before there is overflow</h1>
+        <div class="introduction-grid">
+            <p class="introduction-text" style="order:1">I am a Master’s student at the University of Lincoln researching NeRFs with focus on mesh extraction. I graduated Games Computing in 2022 in which I used the Unreal, Unity, and an engine built from scratch in SDL/C++ to create games. I am looking for a junior role where I can develop my software engineering skills or technical artistry.
+            </p>
+
+            <img class="introduction-image" src="Portfolio/3rdYearProject/Raycasts.PNG" style="order:2">
+        </div>
+
+    <div class="content-grid">
+        <div class="portfolio-item">
+            <h2 class="portfolio-title">Unreal Material Shader</h2>
+            <img class="portfolio-image" src="Portfolio/Destiny Style Materials/Armour and swatches.jpg">
+            <p class="portfolio-text">An Unreal Material Effect which allows the simple recolouring of cosmetics, mimicking the customisation options in Destiny 2.</p>
+        </div>
+        <div class="portfolio-item">
+
+            <h2 class="portfolio-title">Training an Agent to complete procedually generated levels</h2>
+            <img class="portfolio-image" src="Portfolio/3rdYearProject/Raycasts.PNG">
+        
+                <p class="portfolio-text">A long term project which focused on creating a test area for an agent to be trained using state-of-the-art machine learning techniques</p>
+        </div>
+        <div class="portfolio-item">
+            <h2 class="portfolio-title">CRT Post Processing Effect</h2>
+
+            <img class="portfolio-image" src="Portfolio/CRT_Effect/CRT early stage.PNG">
+                <p class="portfolio-text">A Post Processing effect in Unreal Engine that makes the render seem like it is being viewed on a CRT display.</p>
+
+        </div>
+        <div class="portfolio-item">
+            <h2 class="portfolio-title">Vulcan's Fury</h2>
+            <img class="portfolio-image" src="Portfolio/VulcansFury/Vulcans fury.png">
+
+                <p class="portfolio-text">A parkour platformer built as a small team for a 3-day game jam. I created the materials and models and designed the level.</p>
+        </div>
+    </div>
+    </body>
+
+
+
+
+
+
+</html>
