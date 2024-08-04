@@ -1,0 +1,312 @@
+:root{
+    --width-of-content: 85%;
+}
+
+body{
+    margin: 0;
+    font-family: "Helvetica","Lucida Console", Monaco, monospace;
+}
+h1{
+    font-size: 5.0rem;
+}
+
+.name{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: white;
+    font-weight:900;
+    line-height: 0.1;
+}
+
+.socials-button{
+    /* margin: 2.6% 2% 1% 1%; */
+    display: inline-block;
+    text-decoration: none;
+    padding: 2% 2%; 
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    --button-text-color: #a5dce4;
+    color: #fff;
+    /* background: #ff9d2e; */
+    border-radius: 1px;
+    transition: transform 175ms ease-in-out, opacity 175ms ease-in-out;
+    outline: none;
+    /* border: 1px solid black; */
+     max-height: 7vh; 
+     max-width:100px;
+     min-width:50px;
+    width: 100%;
+    height:auto;
+    transform: scale(0.85);
+    align-items: center;
+
+}
+.socials-button :hover{
+    transform: scale(1.20);
+    transition: transform 175ms ease-in-out, opacity 175ms ease-in-out;
+}
+.email-text{
+    text-align:center; 
+    font-size: calc(1em + 1vw); 
+    padding-right:1%; 
+    /* float:right; */
+    flex:1 1 30%;
+    display:inline-block;
+    align-self:center;
+    justify-content: center;
+    color: #fff;
+
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255); */
+}
+.email-text:hover{
+    transform: scale(1.05);
+    transition: transform 175ms ease-in-out, opacity 175ms ease-in-out;
+
+}
+
+.header-grid{
+    max-width: 52%;
+    /* width:60%; */
+    height:auto;
+    display: inline-flex;
+    /* column-gap: 5%; */
+    grid-template-columns:1fr 1fr 1fr 3fr;
+    flex: 1 1 200px;
+    flex-flow:row wrap;
+    justify-content: center;
+
+}
+.hero-container :first-child{
+
+}
+
+.hero{
+    text-align: center;
+    padding: 1px;
+    /* background-color: #926a96; */
+    background-image: url("Portfolio/VulcansFury/Vulcans fury.png");
+    background-position: center;
+    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%,transparent 100%); */
+}
+.social-logo{
+    max-width: 100%;
+    max-height: 100%;
+
+    
+}
+
+
+.introduction-grid{
+    display:inline-flex;
+    /* align-items:center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:relative;
+    width: var(--width-of-content);
+    left:7.5%;
+    justify-content: center;
+
+    border-width: 1px;   
+    flex: 1 1 var(--width-of-content);
+}
+.introduction-text{
+    font-size: 1.4rem;
+    /* padding-left: 1rem; */
+    line-height: 1.1;
+    width:50%;
+    /* max-width : 50%; */
+    flex:1 1 50%;
+    
+
+}
+.introduction-image{
+    max-width: 35%;
+    height: auto;
+    aspect-ratio: 16/9;
+
+    display:flex;
+    margin: 10px 10px 10px 10px;
+    flex: 1 1 45%;
+    /* align-items: center; */
+
+    flex-direction:column;
+
+
+}
+
+
+.content-grid{
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:row wrap;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex: 1 1 160px;
+    margin: 20px 20px;
+
+
+
+}
+
+.portfolio-item{
+    /* margin: 20px 20px; */
+    border: 2fr 2fr;
+    border-radius: 1%;
+    /* border-color: #ff9d2e;
+    background: #ff9d2e; */
+    
+    display:flex;
+    flex: 1 0.3 45%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:column;
+    max-width: 30%;
+
+
+    transition: transform 175ms ease-in-out
+}
+
+.portfolio-image{
+    width: 90%;
+    height: auto; 
+    aspect-ratio: 16/9;
+    margin: 10px 10px 10px 10px;
+    display:flex;
+
+
+}
+.portfolio-text{
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    line-height: 1.1;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    height: auto; 
+    text-align: center;
+
+}
+.portfolio-title{
+
+    width: 90%;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.portfolio-item:hover{
+    transform:scale(1.05);
+
+}
+.title{
+    font-size: 4rem;
+    text-align: center;
+    left:7.5%;
+    line-height: 0.9em;
+    max-width: 60%;
+    
+}
+
+.project-text{
+    position:relative;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    width: var(--width-of-content);
+
+    left: calc((100% - var(--width-of-content))/2);
+    flex-grow:0.2;
+    text-align: center;
+    
+}
+
+.portfolio-iframe{
+    display:flex;
+}
+
+@media only screen and (max-width: 768px){
+    .portfolio-item{
+        max-width:43%;
+        border-color:#926a96;
+    }
+    .introduction-text{
+        font-size: 1.2rem;
+        flex-shrink: 1;
+        max-width:100%;
+        width:100%;
+        flex:1 1 90%;
+        
+    }
+    .introduction-grid{
+        flex-direction:column;
+        flex-wrap: wrap;
+        flex: column-wrap;
+        justify-content: flex-start;
+        display:inline-block;
+        width: var(--width-of-content);
+    
+        left: calc((100% - var(--width-of-content))/2);
+        /* left:0; */
+    } 
+    .header-grid{
+        width:auto;
+        max-width: 80%;
+        /* justify-content: center;
+        align-items: center;  */
+        
+    }
+
+    .introduction-image{
+        max-width:90%;
+        margin: 20px 20px;
+        border: 2fr 2fr;
+        flex: 1 0.5 45%;
+        align-items: center;
+        justify-content: space-between;
+
+        }
+    .socials-button{
+        margin: 0.3%;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0% 0%; 
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        --button-text-color: #a5dce4;
+        color: #fff;
+        max-height: 8vh;
+        width:100%;
+        height:auto;
+    
+        }
+
+    .email-text{
+        /* text-align: left;  */
+        display: inline-flex;
+        font-size: 1.5em; 
+        align-self:center;
+        /*top:35%; */
+        flex:1 1 30%;
+    }
+    .name{
+        line-height: 0.9;
+    }
+    .project-text{
+        position:relative;
+        font-size: 1.2rem;
+        line-height: 1;
+        width: var(--width-of-content);
+    
+        left: calc((100% - var(--width-of-content))/2);
+        flex-grow:0.2;
+        flex-shrink:1;
+        text-align: left;
+        
+    }
+}
