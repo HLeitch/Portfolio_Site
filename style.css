@@ -125,16 +125,16 @@ h1{
 
 }
 .introduction-image{
-    max-width: 35%;
+    width: calc(max(40%,700px));
     height: auto;
     aspect-ratio: 16/9;
-
-    display:flex;
+    /* display:flex; */
     margin: 10px 10px 10px 10px;
-    flex: 1 1 45%;
+    /* flex: 2 1 40%; */
     /* align-items: center; */
-
     flex-direction:column;
+    align-self: center;
+    flex: 0 0 auto;
 
 
 }
@@ -173,11 +173,13 @@ h1{
 }
 
 .portfolio-image{
-    width: 90%;
-    height: auto; 
-    aspect-ratio: 16/9;
+    /* width: 90%;
+    height: auto;  */
+    left: calc((100% - var(--width))/2);
     margin: 10px 10px 10px 10px;
     display:flex;
+    position:relative;
+    
 
 
 }
@@ -219,18 +221,20 @@ h1{
     line-height: 1.1;
     width: var(--width-of-content);
 
-    left: calc((100% - var(--width-of-content))/2);
+    /* left: calc((100% - var(--width-of-content))/2); */
     flex-grow:0.2;
-    text-align: center;
+    text-align: left;
     
 }
 
 .portfolio-iframe{
     display:flex;
-    width: 100%;
-    height: 400px;
+    width: var(--width-of-content);
+    /* height: auto; */
+    aspect-ratio: 16/5;
     border:0;
     position: relative;
+    /* left:calc((100% - var(--width-of-content))/2); */
 }
 .portfolio-flex{
     display:inline-flex;
@@ -239,6 +243,8 @@ h1{
     flex-wrap: wrap;
     position:relative;
     width: var(--width-of-content);
+    left:calc((100% - var(--width-of-content))/2);
+
     justify-content: center;
 
     border-width: 1px;   
@@ -278,7 +284,7 @@ h1{
     }
 
     .introduction-image{
-        max-width:90%;
+        width:90%;
         margin: 20px 20px;
         border: 2fr 2fr;
         flex: 1 0.5 45%;

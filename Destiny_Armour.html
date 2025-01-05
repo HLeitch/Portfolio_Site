@@ -28,20 +28,24 @@
             <p class="introduction-text" style="order:1">An Unreal Engine 5 material inspired by the cosmetic shader system
                 from <i>'Destiny 2'</i>. In <i>'Destiny 2'</i> the player can collect shaders to apply to the cosmetics worn 
                 and used by their player character. These shaders give the appearance of different metals and fabrics on the players
-                equipment. At runtime, this is a quick and effective way to grant the player customisablity as a reward for 
-                progressing, though it would require a great deal of communication to execute in a large development team.
+                equipment. Each metal and fabric type is assigned it's material parameters seperately within the parameters screen of 
+                the material instance. I also used C++ to create a component for cosmetics, and added functionality that would allow 
+                the changing of these materials at runtime.
             </p>
 
             <img class="introduction-image" src="Portfolio/Destiny Style Materials/Armour and swatches.jpg" style="order:2">
             <!-- <iframe class="portfolio-iframe" style="order:2;" width="560" height="315" src="https://www.youtube.com/embed/s9RBbLAxWoY?si=bwfkMSZnfc-MaOMt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
         </div>
         <div class="portfolio-flex">
+            <p class="project-text">My implementation switches between 4 sets of material properties based on a colour provided; red 
+                and green to metals and blue and yellow to fabrics. This could be achieved using vertex colours, though is currently 
+                applied via a texture sample. Some armour that has been painted to use this material effect is below, along with the 
+                Blueprint function used to switch material properties according to colour.<br> 
+            </p>
+            <iframe class="portfolio-iframe" src="https://blueprintue.com/render/lg_dwkpg/" style="position:relative;" scrolling="no" height="500px" allowfullscreen></iframe>
+            <img class="portfolio-image" width="500px"  src="Portfolio/Destiny Style Materials/Materials Designated cropped.PNG">
+            <img class="portfolio-image" width="500px" src="Portfolio/Destiny Style Materials/Example material.PNG" >
 
-        <iframe class="portfolio-iframe" src="https://blueprintue.com/render/lg_dwkpg/" style="position:relative;"scrolling="no" allowfullscreen></iframe>
-        <p class="project-text">My implementation switches between 4 sets of material properties based on a colour provided; red and green to metals and blue and yellow to fabrics. This could be achieved using vertex colours, though is currently applied via a texture sample. Some armour that has been painted to use this material effect is below, along with the Blueprint function used to switch material properties according to colour can be found at this link.
-        <img style="display: flex; position: relative;" width="200" src="Portfolio/Destiny Style Materials/Materials Designated cropped.PNG">
-        
-        </p>
         </div>        
     </body>
 </html>
